@@ -1,4 +1,3 @@
 function solution(strings, n) {
-    let sortedStr = strings.sort();
-    return sortedStr.sort((a,b) => a[n].charCodeAt() - b[n].charCodeAt());
+    return strings.map(x => [...x][n] + x).sort().map(x => x.substring(1))
 }
