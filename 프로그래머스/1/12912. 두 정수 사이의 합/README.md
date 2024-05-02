@@ -58,3 +58,11 @@
       </table>
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+### 보고 감탄하여 기록해두는 코드
+<pre>
+function adder(a, b){
+    var result = 0
+    return (a+b) * (Math.abs(a-b)+1) / 2;
+}
+</pre>
