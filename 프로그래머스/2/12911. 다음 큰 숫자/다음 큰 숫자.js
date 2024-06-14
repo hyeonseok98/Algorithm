@@ -10,5 +10,5 @@ function solution(n) {
 
 
 function NumberOfOne(number) {
-    return number.toString(2).replace(/0/g,"").length;
+    return number.toString(2).match(/1/g).length;
 }
