@@ -1,8 +1,8 @@
 function solution(n) {
-    const numberOfNOne = NumberOfOne(n)
+    const targetNumber = NumberOfOne(n)
     let nextNumber = n+1;
     
-    while(numberOfNOne !== NumberOfOne(nextNumber)) {
+    while(targetNumber !== NumberOfOne(nextNumber)) {
         nextNumber++;
     }
     return nextNumber;
