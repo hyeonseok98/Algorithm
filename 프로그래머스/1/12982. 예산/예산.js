@@ -3,7 +3,7 @@ function solution(d, budget) {
     d.sort((a, b) => a - b)
 
     for(let i of d) {
-        if(d[idx] > budget) continue;
+        if(d[idx] > budget) break;
         budget -= i;
         idx++;
     }
